@@ -1,12 +1,9 @@
-#intiate GPIO Pins
+# intiate GPIO Pins and PubNub
 import RPi.GPIO as GPIO
 import time
-
-GPIO.setmode(GPIO.BCM)
-
-#intiate PubNub
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.pubnub import PubNub
+GPIO.setmode(GPIO.BCM)
 
 pnconfig = PNConfiguration()
 pnconfig.subscribe_key = "sub-c-48410fe0-13a2-11e8-a78c-ded3dc92678b"
